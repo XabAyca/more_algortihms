@@ -1,11 +1,12 @@
-// Avec une liste de nombres entiers relatifs et un nombre k, crée une méthode retournant un booléen qui affiche si deux nombres de cette liste ont k comme résultat de leur somme.
+// With a list of relative integers and a number k, create a method returning a boolean that displays whether two numbers in this list have k as the result of their sum.
 
-// Par exemple, si je te donne la liste [10, 15, 3, 7] et k = 17, la fonction devra sortir true car 10 + 7 = 17. Si je te donne la liste [1, 8, 10, 21] et k = 19, la fonction devra sortir false car il n'y a pas deux nombres ayant 19 comme résultat de leur addition.
+// For example, if I give you the list [10, 15, 3, 7] and k = 17, the function should output true because 10 + 7 = 17. If I give you the list [1, 8, 10, 21] and k = 19, the function should output false because there are not two numbers having 19 as the result of their addition.
 
-// Résous le sujet 1 avec une complexité algorithmique de O(n), c'est-à-dire que ton programme pourra parcourir plusieurs fois chaque élément du tableau (mais pas de boucle imbriquée !).
+// Exercice 3
+// Solve topic 1 with an algorithmic complexity of O (n), i.e. your program will be able to iterate through each element of the array several times (but no nested loop!).
 
 const list = [1, 8, 10, 21]
-const k    = 30
+const k    = 19
 
 class Verification{
   constructor(list,k){

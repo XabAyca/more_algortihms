@@ -1,13 +1,12 @@
-// Avec une liste de nombres entiers relatifs et un nombre k, crée une méthode retournant un booléen qui affiche si deux nombres de cette liste ont k comme résultat de leur somme.
+// With a list of relative integers and a number k, create a method returning a boolean that displays whether two numbers in this list have k as the result of their sum.
 
-// Par exemple, si je te donne la liste [10, 15, 3, 7] et k = 17, la fonction devra sortir true car 10 + 7 = 17. Si je te donne la liste [1, 8, 10, 21] et k = 19, la fonction devra sortir false car il n'y a pas deux nombres ayant 19 comme résultat de leur addition.
+// For example, if I give you the list [10, 15, 3, 7] and k = 17, the function should output true because 10 + 7 = 17. If I give you the list [1, 8, 10, 21] and k = 19, the function should output false because there are not two numbers having 19 as the result of their addition.
 
-// Résous le sujet 1 en ne faisant qu'un seul passage sur ta liste.
-
-// Si tu réussis cet exercice, sache qu'il a été posé en entretien par Google. Tu peux postuler à Google. La classe, non ?
+// Exercise 5
+// Solve topic 1 by making only one passage on your list.
 
 const list = [10, 15, 3, 7]
-const k    = 22
+const k    = 17
 
 class Verification{
   constructor(list,k){
@@ -20,13 +19,13 @@ class Verification{
   // Create a new array with the difference of k and the elements of array. After verify for all element if includes one of new array elements. If includes return true...
   programm(list,k){
     let tempArray = []
-    for (let i = 0; i < list.length; i++){
-      tempArray.push(k - list[i]);
+    tempArray.push(k - list[0])
+    for (let i = 1; i < list.length; i++){
       this.count++;
       if (tempArray.includes(list[i])) {
         return console.log(true+`, number of comparisons: ${this.count}`);
       } else {
-        tempArray.push(k - list[i+1]);
+        tempArray.push(k - list[i]);
       }
     }
     return console.log(false+`, number of comparisons: ${this.count}`);

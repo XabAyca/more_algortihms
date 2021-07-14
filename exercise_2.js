@@ -1,10 +1,11 @@
-// Nous allons te donner une liste contenant la hauteur (en étages) d'immeubles appartenant à une rue, d'est en ouest. Un agent immobilier voudrait que tu écrives un algorithme qui retourne combien de bâtiments de cette rue ont au moins un appartement avec une vue sur le soleil couchant (à l'ouest), afin de bien évaluer la valeur des bâtiments de la rue.
+// We will give you a list containing the height (in floors) of buildings belonging to a street, from east to west. A real estate agent would like you to write an algorithm that returns how many buildings on that street have at least one apartment with a view of the setting sun (to the west), in order to properly assess the value of the buildings on the street.
 
-// Par exemple, avec la liste [3, 7, 8, 3, 6, 1], la fonction devrait retourner 3, puisque l'étage le plus haut des immeubles ayant comme taille 8, 6, et 1 ont tous une vue à l'ouest. Ou autre exemple la liste [1, 4, 5, 8] devrait te retourner 1 puisque seul le dernier bâtiment a au moins un appartement avec une vue à l'ouest.
+// For example, with the list [3, 7, 8, 3, 6, 1], the function should return 3, since the highest floor of buildings with size 8, 6, and 1 all have a view West. Or another example the list [1, 4, 5, 8] should return 1 since only the last building has at least one apartment with a view to the west.
 
-// Résous le sujet 2 avec une complexité algorithmique de O(n²), c'est-à-dire que ton programme devra comparer chaque élément entre eux à l'aide de 2 boucles imbriquées.
+// Exercise 2
+// Solve subject 2 with an algorithmic complexity of O (n²), ie your program will have to compare each element with each other using 2 nested loops.
 
-const list = [3, 7, 8, 10, 3, 11, 1]
+const list = [3, 7, 8, 10, 3, 6, 1]
 
 class HowManyBuilding{
   constructor(list){
