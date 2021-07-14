@@ -20,7 +20,7 @@ Par exemple, avec la liste [3, 7, 8, 3, 6, 1], la fonction devrait retourner 3, 
 * Exercice 1
 Résous le sujet 1 avec une complexité algorithmique de O(n²), c'est-à-dire que ton programme devra comparer chaque élément entre eux à l'aide de 2 boucles imbriquées.
 
-* *Exercice 2
+* Exercice 2
 Résous le sujet 2 avec une complexité algorithmique de O(n²), c'est-à-dire que ton programme devra comparer chaque élément entre eux à l'aide de 2 boucles imbriquées.
 
 * Exercice 3
